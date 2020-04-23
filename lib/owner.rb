@@ -56,5 +56,5 @@ class Owner
   def sell_pets # self.mood = :(
     Dog.mood="nervous"
     Cat.mood="nervous" 
-    
+  end
 end
