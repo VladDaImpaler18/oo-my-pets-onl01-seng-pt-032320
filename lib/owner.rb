@@ -45,8 +45,7 @@ class Owner
   end
   
   def walk_dogs
-    binding.pry
-    #Dog.all.each{ |d| d.mood="happy" if d.owner==self }
+    dogs.each{ |d| d.mood="happy" }
   end
   
   def feed_cats
