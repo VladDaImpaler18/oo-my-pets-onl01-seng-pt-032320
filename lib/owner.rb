@@ -45,7 +45,15 @@ class Owner
   end
   
   def walk_dogs
-    
+    Dog.all.each{ |d| d.mood="happy" if d.owner==self }
   end
   
+  def feed_cats
+    Cat.mood="happy"
+  end
+  
+  def sell_pets # self.mood = :(
+    Dog.mood="nervous"
+    Cat.mood="nervous" 
+    
 end
